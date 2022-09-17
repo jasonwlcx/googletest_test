@@ -9,12 +9,16 @@
 #define Checkout_hpp
 
 #include <stdio.h>
+#include <string>
 
 class Checkout{
     
 public:
     Checkout();
+    virtual ~Checkout() {};
     void function();
+    void addItemPrice(std::string item, int price);
+    void addItem(std::string item);
 protected:
     
 private:
